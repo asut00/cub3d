@@ -18,7 +18,7 @@ static void	error_mlx(char *msg, int text_created, t_var *var)
 	j = 0;
 	while (j < text_created)
 		mlx_destroy_image(var->mlx, var->textures[j++].img);
-	mlx_destroy_display(var->mlx);
+	// mlx_destroy_display(var->mlx);
 	free(var->mlx);
 	ft_putstr_fd(msg, 2);
 	clear_garbage_and_exit(var, EXIT_FAILURE);

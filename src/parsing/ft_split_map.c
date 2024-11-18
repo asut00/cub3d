@@ -64,7 +64,7 @@ char	**ft_split_map(char *s, char c, t_var *var)
 {
 	int		i;
 	int		j;
-	int		tmp_max_len;
+	// int		tmp_max_len;
 	char	**splitted;
 
 	i = 0;
@@ -77,7 +77,7 @@ char	**ft_split_map(char *s, char c, t_var *var)
 		while (s[j] && s[j] == c)
 			j++;
 		splitted[i] = create_line(&s[j], ft_strreallen(&s[j], c), var);
-		tmp_max_len = ft_strreallen(&s[j], c);
+		// tmp_max_len = ft_strreallen(&s[j], c);
 		j += ft_strreallen(&s[j], c);
 		i++;
 	}

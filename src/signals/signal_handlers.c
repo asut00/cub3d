@@ -31,6 +31,7 @@ int	handle_mouse(int x, int y, t_var *var)
 
 int	handle_keyboard(int keysym, t_var *var)
 {
+	// printf("keysym is : %d\n", keysym);
 	if (keysym == KEY_ESC)
 		rage_quited(var);
 	else if (keysym == KEY_W)
