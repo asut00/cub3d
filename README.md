@@ -1,8 +1,8 @@
 # Cub3D 🕹️
 
-<img width="795" alt="backroom3d" src="https://github.com/user-attachments/assets/af430012-6b21-408f-8183-06e858a1b2c1">
-
 **Cub3D** is a 3D game engine built in C, inspired by the classic **Wolfenstein 3D**. It leverages raycasting to render a first-person perspective in a 2D environment, turning simple maps into immersive 3D experiences.
+
+<img width="795" alt="backroom3d" src="https://github.com/user-attachments/assets/af430012-6b21-408f-8183-06e858a1b2c1">
 
 ## Table of Contents
 
