@@ -36,7 +36,7 @@ void	img_creation_error(t_var *var)
 
 	ft_putstr_fd("Error\ncritical failure during image creation\n", 2);
 	mlx_destroy_window(var->mlx, var->win);
-	mlx_destroy_display(var->mlx);
+	// mlx_destroy_display(var->mlx);
 	j = 0;
 	while (j < NBR_OF_TEXTURES_BONUS)
 		mlx_destroy_image(var->mlx, var->textures[j++].img);
@@ -50,7 +50,7 @@ void	data_addr_creation_error(t_var *var)
 
 	ft_putstr_fd("Error\ncritical failure during image addresse creation\n", 2);
 	mlx_destroy_window(var->mlx, var->win);
-	mlx_destroy_display(var->mlx);
+	// mlx_destroy_display(var->mlx);
 	j = 0;
 	while (j < NBR_OF_TEXTURES_BONUS)
 		mlx_destroy_image(var->mlx, var->textures[j++].img);
@@ -67,7 +67,7 @@ int	rage_quited(t_var *var)
 		mlx_destroy_image(var->mlx, var->textures[j++].img);
 	mlx_destroy_image(var->mlx, var->img);
 	mlx_destroy_window(var->mlx, var->win);
-	mlx_destroy_display(var->mlx);
+	// mlx_destroy_display(var->mlx);
 	free(var->mlx);
 	clear_garbage_and_exit(var, EXIT_SUCCESS);
 	return (0);
